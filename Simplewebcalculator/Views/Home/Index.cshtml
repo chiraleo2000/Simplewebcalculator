@@ -1,0 +1,22 @@
+﻿@model Simplewebcalculator.Models.CalculatorModel
+
+<form asp-controller="Home" asp-action="Index" method="post">
+    <div>
+        <label>Value A:</label>
+        <input asp-for="ValueA" />
+    </div>
+    <div>
+        <label>Value B:</label>
+        <input asp-for="ValueB" />
+    </div>
+    <div>
+        <button type="submit" name="command" value="Add">Add</button>
+        <button type="submit" name="command" value="Subtract">Subtract</button>
+        <button type="submit" name="command" value="Multiply">Multiply</button>
+        <button type="submit" name="command" value="Divide">Divide</button>
+    </div>
+    <div>
+        <label>Result:</label>
+        <input asp-for="Result" readonly />
+    </div>
+</form>
